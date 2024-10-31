@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 
 // Define the Email schema
 const emailSchema = new mongoose.Schema({
-  recipient: {
+  recipient: [{
     type: String,
     required: true,
     trim: true,
-  },
+  }],
   subject: {
     type: String,
     required: true,
